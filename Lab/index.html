@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mongkon Arsakit</title>
 </head>
 <body>
-    <head> My Web </head>
+    <h1>
+        <header> 
+            Welcom to My Website 
+        </header>
+        นาย มงคล อาษากิจ
+    </h1>
+
+    <nav>
+        <section id="home">
+            <h2>หน้าหลัก</h2>
+            <ul>
+                <li><a href="#home">หน้าหลัก</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+                <li><a href="#rating">ให้คะเเนน</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p><strong>ผมชื่อ</strong> นาย มงคล อาษากิจ</p>
+            <p><strong>อายุ</strong> 18 ปี</p>
+            <p><strong>ศึกษาที่</strong> มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+            <p><strong>ชั้นปีที่</strong> 1</p>
+            <br>
+            <table border="1" width="75%">
+                <caption>ตารางเปรียบเทียบระหว่างภาษา C เเละ Java</caption>
+                <tr>
+                    <th rowspan="2">หัวข้อ</th>
+                    <th rowspan="2">C</th>
+                    <th rowspan="2">Java</th>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>จุดเด่น</td>
+                        <td>เร็ว แรง สั่งงานฮาร์ดแวร์ได้โดยตรง</td>
+                        <td>เขียนครั้งเดียวรันได้ทุกที่, มีระบบจัดการขยะเเละระบบช่วยคืนหน่วยความจำให้อัตโนมัติ</td>
+                    </tr>
+                    <tr>
+                        <td>ความยาก</td>
+                        <td>ต้องจัดการหน่วยความจำเอง มีโอกาสพังง่ายถ้าเขียนไม่ดี</td>
+                        <td>สร้าง OS, Driver, IoT, โปรแกรมที่ต้องการความเร็วสูง</td>
+                    </tr>
+                    <tr>
+                        <td>เหมาะกับ</td>
+                        <td>ต้องจัดการหน่วยความจำเอง มีโอกาสพังง่ายถ้าเขียนไม่ดี</td>
+                        <td>แอพมือถือ , Backend, ระบบธนาคาร/องค์กรใหญ่ๆ</td>
+                    </tr>
+                </tr>
+            </table>
+        </section>  
+
+        <section id="contact">
+            <h2>ช่องทางติดต่อ</h2>
+            <p><a href="https://github.com/Mongkol88" target="_blank">ลิงก์ github</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <section id="rating">
+            <form>
+                <h2>ให้คะเเนนเว็บ</h2>
+                <label>ชื่อ:</label>
+                <input type="text" name="name">
+                <br><br>
+                <label>คะเเนน:</label>
+                <select name="rating">
+                    <option>10</option>
+                    <option>9</option>
+                    <option>8</option>
+                    <option>7</option>
+                    <option>6</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+                <br><br>
+                <label>คำเเนะนำ:</label>
+                <input type="text" name="suggestion">
+                <br><br>
+                <button type="submit">ส่งเเบบฟอร์ม</button>
+            </form>
+        </section>
+        <br><br><br><br>
+        <img src="../Image/my-mom-is-kinda-homeless.webp" alt="My mom is Kinda Homeless" title="My mom is Kinda Homeless">
+    </footer>
 </body>
 </html>

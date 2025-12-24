@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover:hover {
+            color: black;
+            background: red;
+            cursor: pointer;
+        }
+
+        .highlight {
+            background: yellow;
+            padding: 5px;
+        }
+
+        #header {
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus {
+            border-color: rgb(255, 0, 128);
+            outline: none;
+            background-color: white;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            font-weight: 600;
+            font-size: 22px;
+            color: red;
+        }
+
+        .Sans-serif {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 22px;
+            color: black;
+        }
+
+        .Text_Shadow {
+            text-align: center;
+            text-decoration: underline;
+            line-height: 1.5;
+            font-size: 40px;
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+
+        .text-align_left {
+            text-align: left;
+        }
+        .text-align_center {
+            text-align: center;
+        }
+        .text-align_right {
+            text-align: right;
+        }
+        .text-align_justifi {
+            text-align: justify;
+        }
+
+        .text-decoration_underline {
+            text-decoration: underline;
+        }
+        .text-decoration_lineThrough {
+            text-decoration: line-through;
+        }
+        .text-decoration_none {
+            text-decoration: none;
+        }
+
+        .line-hight1-5 {
+            line-height: 1.5;
+        }
+        .line-hight24 {
+            line-height: 24px;
+        }
+        .box-color {
+            width: 300px;
+            height: 120px;
+            background-color: lightblue;
+            padding: 20px   ;
+        }
+    </style>
+</head>
+<body>
+    <h1>ตัวอย่าง CSS Selectors</h1>
+
+    <p class="hover">
+        Test hover
+    </p>
+
+    <p>
+        ข้อความนี้ถูกจัดสีด้วย Element Selector (p { color: green; })
+    </p>
+
+    <p class="highlight">
+        ข้อความนี้ถูกจัดสไตล์ด้วย Class selector (.highlight)
+    </p>
+
+    <div id="header">
+        นี่คือพื้นที่  header (ID Selector)
+    </div>
+
+    <h2>Attribute Select [type="text"]</h2>
+
+    <input type="text" placeholder="พิมพ์ข้อความที่นี่">
+    
+    <p class="Sans-serif">
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        color: black;
+    </p>
+
+    <h1 class="Text_Shadow">
+        Text-Shadow effect
+    </h1>
+
+    <h1>1.การจัดเเนวข้อความ (text-align)</h1>
+    <p class="text-align_left">
+        ข้อความนี้จัดชิดซ้าย
+    </p>
+    <p class="text-align_center">
+        ข้อความนี้จัดกึ่งกลาง
+    </p>
+    <p class="text-align_right">
+        ข้อความนี้จัดชิดขวา
+    </p>
+    <p class="text-align_justifi">
+        ข้อความนี้จัดเต็มบรรทัด (justifi) เพื่อให้ชิดทั้งซ้ายเเละขวาโดยอัตโนมัติ
+    </p>
+
+    <h1>2.การตกเเต่งข้อความ (text-decoration)</h1>
+    <p class="text-decoration_underline">ข้อความนี้ขีดเส้นใต้ (underline)</p>
+    <p class="text-decoration_lineThrough">ข้อความนี้ขีดฆ่า (line Through)</p>
+    <p class="text-decoration_none">ข้อความนี้ไม่มีการตกเเต่ง (none)</p>
+
+    <h1>3. การกำหนดระยะบรรทัด (line-height)</h1>
+    <p class="line-hight1-5">ระยะบรรทัด 1.5 เท่า - เหมาะสำหรับการอ่านแบบสบายตาในบทความทั่วไป</p>
+    <p class="line-hight24">ระยะบรรทัด 24px - ควบคุมความสูงบรรทัดแบบคงที่</p>
+
+</body>
+</html>

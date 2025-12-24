@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongkon Arsakit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Welcome to My Website</h1> 
+        <h1 class="name">นาย มงคล อาษากิจ</h1>
+    </header>
+
+    <!--ตรงนี้ส่วนที่เมื่อกดจะนำไปน้าส่วนต่างๆ-->
+    <nav style="text-align: center; margin-top: 20px;">
+        <section id="home">
+            <label><strong>เมนูหลัก</strong></label>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#home">หน้าหลัก</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+                <li><a href="#rating">ให้คะแนน</a></li>
+            </ul>
+        </section>
+    </nav>
+    <!--นี้คือส่วนเนื้อหาหลักของเว็บ-->
+    <main>
+        <section id="about" style="text-align: center;">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p><strong>ผมชื่อ</strong> นาย มงคล อาษากิจ</p>
+            <p><strong>อายุ</strong> <span class="highlight">18 ปี</span></p> 
+            <p><strong>ศึกษาที่</strong> มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+            <p><strong>ชั้นปีที่</strong> 1</p>
+            <br>
+            
+            <table border="1" width="75%" class="Table">
+                <caption>ตารางเปรียบเทียบระหว่างภาษา C และ Java</caption>
+                <tr>
+                    <th>หัวข้อ</th>
+                    <th>C</th>
+                    <th>Java</th>
+                </tr>
+                <tr>
+                    <td>จุดเด่น</td>
+                    <td>เร็ว แรง สั่งงานฮาร์ดแวร์ได้โดยตรง</td>
+                    <td>เขียนครั้งเดียวรันได้ทุกที่, มีระบบจัดการขยะ</td>
+                </tr>
+                <tr>
+                    <td>ความยาก</td>
+                    <td>ต้องจัดการหน่วยความจำเอง</td>
+                    <td>ซับซ้อนในโครงสร้างคลาส แต่ปลอดภัยกว่า</td>
+                </tr>
+                <tr>
+                    <td>เหมาะกับ</td>
+                    <td>OS, Driver, IoT</td>
+                    <td>App มือถือ, Backend, องค์กรใหญ่</td>
+                </tr>
+            </table>
+        </section>  
+
+        <section id="contact" style="text-align: center; margin-top: 30px;">
+            <h2>ช่องทางติดต่อ</h2>
+            <p><a href="https://github.com/Mongkol88" target="_blank">ลิงก์ Github</a></p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px; padding-bottom: 20px;">
+        <section id="rating" class="Form">
+            <form>
+                <h2>ให้คะแนนเว็บ</h2>
+                <label>ชื่อ:</label>
+                <input type="text" name="name" placeholder="กรุณากรอกชื่อ-นามสกุล">
+                <br><br>
+                <label>คะแนน:</label>
+                <select name="rating">
+                    <option>10</option>
+                    <option>9</option>
+                    <option>8</option>
+                    <option>7</option>
+                    <option>6</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+                <br><br>
+                <label>คำแนะนำ:</label>
+                <input type="text" name="suggestion">
+                <br><br>
+                <button type="submit">ส่งแบบฟอร์ม</button>
+            </form>
+        </section>
+        <br>
+        <img src="../Image/my-mom-is-kinda-homeless.jpg" alt="My mom is Kinda Homeless" title="My mom is Kinda Homeless" width="300">
+    </footer>
+</body>
+</html>

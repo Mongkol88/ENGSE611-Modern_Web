@@ -1,0 +1,46 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: hsl(206, 47%, 97%);
+    color: #333;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+#main-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 3px solid #0056b3;
+    text-align: center; 
+}
+
+.highlight {
+    color: #d9534f;
+    font-weight: bold; 
+    background-color: #fff3cd;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+
+.Table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.Table th {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+}
+
+.Table td {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+}

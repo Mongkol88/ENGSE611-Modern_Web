@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        height: 90px;
+        
+        }
+
+        .item {
+        font-family: sans-serif;
+        box-shadow: 0px 0px 15px #8888;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        font-size: 15px;
+        width: 250px;
+        padding-left: 10px;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        body {
+            background: #f0f0f0;
+        }
+
+        h2 {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>โจทย์ที่ 1: Card Layout ด้วย FlexBox</h2>
+    <div class="flex-box" style="justify-content: center;">
+    <div class="item">
+        <h3>Card 1</h3>
+        <p></p>
+    </div>
+    <div class="item">
+        <h3>Card 2</h3>
+    </div>
+    <div class="item">
+        <h3>Card 3</h3>
+    </div>
+</body>
+</html>

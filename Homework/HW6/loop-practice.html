@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output" style="font-family: sans-serif;"></div>
+    <button onclick="loop()" style="border-radius: 5px; font-family: sans-serif;">Run code</button>
+
+    <script>
+        function loop() {
+            const output = [];
+            let maxNumber = 10;
+            for (let index = 0; index <= maxNumber; index++) {
+                if (index % 2 == 0) {
+                    output.push(index + " (คู่)")
+                    console.log(index ,"(คู่)");
+                } else if (index % 2 == 1) {
+                    output.push(index + " (คี่)")
+                    console.log(index ,"(คี่)");
+                }
+            }
+            for (let index = 0; index <= maxNumber; index++) {
+            if (index % 2 == 0) {
+                    output.push("นับทีละ 2:"+ index)
+                    console.log("นับทีละ 2:", index);
+                }
+            }
+            for (let index = maxNumber; index >=  0; index--) {
+                output.push("ถอยหลัง:"+ index)
+                console.log("ถอยหลัง:", index)
+            }
+            document.getElementById("output").innerHTML = output.join("<br>");
+        }
+
+    </script>
+</body>
+</html>

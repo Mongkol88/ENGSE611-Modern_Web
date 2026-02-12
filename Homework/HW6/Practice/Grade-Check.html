@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #d6d6d6;">
+    <h1>ตัวอย่างการเขียน JavaScript</h1>
+    <pre id="output" style="background-color: white; border-radius: 10px; color: black; font-family: sans-serif; padding-left: 10px;">ผลลัพธ์จะเเสดงที่นี่...</pre>
+    <button onclick="runConditional()" style="border-radius: 5px; font-family: sans-serif; background-color: greenyellow; border-color: greenyellow;">Run</button>
+    
+    <script>
+        function runConditional() {
+            const output = [];
+
+            let score = 72;
+
+            if (score >= 50) {
+                output.push("ผลสอบ: ผ่าน");
+                console.log("ผลสอบ: ผ่าน");
+            } else {
+                output.push("ผลสอบ: ไม่ผ่าน");
+                console.log("ผลสอบ: ไม่ผ่าน");
+            }
+
+            for (let i = 0; i < 5; i++) {
+                output.push("รอบที่: " + i);
+                console.log("รอบที่: ", i);
+            }
+
+            document.getElementById("output").textContent = output.join("\n");
+        }
+    </script>
+</body>
+</html>

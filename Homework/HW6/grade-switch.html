@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output" style="font-family: sans-serif;"></div>
+    <button onclick="GradeSwitch()" style="border-radius: 5px; font-family: sans-serif;">Run code</button>
+
+    <Script>
+        function GradeSwitch() {
+            const output = [];
+            let score = Math.floor(Math.random() * 100) + 1;
+            let Grade = "";
+            output.push("คะเเนนที่สุ่มได้: "+ score);
+            console.log("คะเเนนที่สุ่มได้: ", score);
+            if (score >= 80) {
+                output.push("เกรด A");
+                console.log("เกรด A");
+                Grade = "A";
+            } else if (score >= 70 && score < 80) {
+                output.push("เกรด B");
+                console.log("เกรด B");
+                Grade = "B";
+            } else if (score >= 60 && score < 70) {
+                output.push("เกรด C");
+                console.log("เกรด C");
+                Grade = "C";
+            } else if (score >= 50 && score < 60) {
+                output.push("เกรด D");
+                console.log("เกรด D");
+                Grade = "D";
+            } else  {
+                output.push("เกรด F");
+                console.log("เกรด F");
+                Grade = "F";
+            }
+
+
+            if (score >= 50) {
+                output.push("ผลสอบ: ผ่าน");
+                console.log("ผลสอบ: ผ่าน");
+            } else {
+                output.push("ผลสอบ: ไม่ผ่าน");
+                console.log("ผลสอบ: ไม่ผ่าน");
+            }
+
+            switch (Grade) {
+                case "A":
+                    output.push("คำอธิบาย: ยอดเยื่ยมมาก");
+                    console.log("คำอธิบาย: ยอดเยื่ยมมาก");
+                    break;
+                case "B":
+                    output.push("คำอธิบาย: ดีมาก รักษามาตรฐานไว้");
+                    console.log("คำอธิบาย: ดีมาก รักษามาตรฐานไว้");
+                    break;
+                case "C":
+                    output.push("คำอธิบาย: ผ่านเกณฑ์ระดับดี");                
+                    console.log("คำอธิบาย: ผ่านเกณฑ์ระดับดี");
+                    break;
+                case "D":
+                    output.push("คำอธิบาย: พอใช้ เเต่ควรพัฒนาเพิ่ม");                
+                    console.log("คำอธิบาย: พอใช้ เเต่ควรพัฒนาเพิ่ม");
+                    break;
+                case "F":
+                    output.push("คำอธิบาย: ต้องลงทะเบียนเรียนใหม่");
+                    console.log("คำอธิบาย: ต้องลงทะเบียนเรียนใหม่");
+                    break;
+                default:
+                    break;
+            }
+            document.getElementById("output").innerHTML = output.join("<br>");
+        }
+    </Script>
+</body>
+</html>

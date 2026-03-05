@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">หัวข้อเดิมบนหน้าเว็บ</h1>
+    <p>รายการ (class = "item"")</p>
+    <ul>
+        <li class="item">รายการที่ 1</li>
+        <li class="item">รายการที่ 2</li>
+        <li class="item">รายการที่ 3</li>
+    </ul>
+
+    <div style="margin-top: 20px; margin-bottom: 10px;">
+        <button onclick="changeTitle()">เปลี่ยนข้อความ + สีหัวข้อ</button>
+        <button onclick="highlightItems()">ไฮไลด์ .item ทั้งหมด</button>
+        <button onclick="addParagraph()">สร้าง & เพิ่มข้อความใหม่</button>
+    </div>
+
+
+    <div id="logBox">Log: รอกดปุ่มเพื่อดูการเปลี่ยนเเปลง...</div>
+    <script>
+        const title = document.getElementById("header");
+        const items = document.querySelectorAll(".item");
+        const logbox = document.getElementById("logBox");
+
+        function log(message) {
+            console.log(message);
+            logbox.textContent += "\n" + message;
+        }
+
+        function changeTitle() {
+            title.textContent = "หัวข้อถูกเปลี่ยนโดย JavaScript";
+            title.style.color = "red";
+            title.style.fontWeight = "bold";
+            log("เปลี่ยนข้อความเเละสีของ #header เเล้ว");
+        }
+
+        function highlightItems() {
+            items.forEach((items, index) =>  {
+                items.classList.add("highlight");
+                items.textContent = "รายการที่ " +  (index + 1) + "(ถูกไฮไลด์)";
+            });
+            log("เพิ่มคลาส .highlight ให้ .item ทั้งหมด");
+        }
+
+        function addParagraph() {
+            let p = document.createElement("p");
+            p.textContent = "ข้อความใหม่ที่เพิ่งจาก JavaScript เวลา: " + new Date().toLocaleTimeString();
+            document.body.appendChild(p);
+            log("สร้าง <p> ใหม่เเละ appendChild ลงท้าย <body>");
+        }
+    </script>
+</body>
+</html>

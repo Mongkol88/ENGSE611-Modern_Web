@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1) ตัวอย่าง preventDefault() — หยุดการส่งฟอร์ม</h2>
+    <div class="box">
+        <form id="myForm">
+            <input class="form-input" type="text" placeholder="ลองพิมพ์แล้วกด Enter">
+            <button type="submit">ส่ง</button>
+        </form>
+        <p id="result" style="color: green; font-weight:bold;"></p>
+    </div>
+
+    <h2>2) ตัวอย่าง stopPropagation() — หยุด Event Bubbling</h2>
+    <div class="box">
+        <div id="parent">
+            Parent Element
+            <button id="child">Child Button</button>
+        </div>
+        <p>(ดูผลลัพธ์ใน Console)</p>
+    </div>
+
+    <script>
+
+    const form = document.getElementById("myForm");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        result.textContent = "ฟอร์มถูกหยุดแล้ว!";
+    });
+
+    const parent = document.getElementById("parent");
+    const child = document.getElementById("child");
+
+    parent.addEventListener("click", function() {
+        console.log("Parent ถูกคลิก");
+    });
+
+    child.addEventListener("click", function(event) {
+        event.stopPropagation();
+        console.log("เฉพาะ Child ถูกคลิก");
+    });
+    </script>
+    </Script>
+</body>
+</html>
